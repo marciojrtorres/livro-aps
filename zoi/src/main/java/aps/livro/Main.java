@@ -6,8 +6,7 @@ public class Main {
 		
 		Bolsa bolsa = new Bolsa(10);
 
-		bolsa.adiciona("C#");
-		bolsa.adiciona("Java");
+		bolsa.adiciona("C#", "Java", "Python", "Ruby");
 
 		for (Object o : bolsa) {
 			System.out.println(o);

@@ -15,6 +15,15 @@ public class Bolsa implements Iterable {
 		objetos[indice++] = obj;
 	}
 
+	// método concordande com o Princípio ZOI
+
+	public void adiciona(Object obj1, Object... objs) {
+		this.adiciona(obj1);
+		for (Object o : objs) {
+			this.adiciona(o);
+		}
+	}
+
 	public Iterator iterator() {
 		return new BolsaIterator();
 	}
