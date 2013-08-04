@@ -1,3 +1,3 @@
-Zero One Infinity Rule
+Return Early
 ======================
 Execute com: mvn exec:java

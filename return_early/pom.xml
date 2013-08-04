@@ -2,13 +2,15 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <name>return_early</name>
+
   <groupId>aps.livro</groupId>
-  <artifactId>zoi</artifactId>
+  <artifactId>${project.name}</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>zoi</name>
-  <url>https://github.com/marciojrtorres/livro-aps/zoi</url>
+  
+  <url>https://github.com/marciojrtorres/livro-aps/${project.name}</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
