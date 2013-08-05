@@ -3,44 +3,52 @@ package aps.livro;
 
 public class Usuario {
 
-	public enum Cargo {
-		Gerente, Funcionario;
-	}
+    public enum Cargo {
+        Gerente, Funcionario;
+    }
 
-	
-	private String nome;
+    private String nome;
 
-	private Cargo cargo;
+    private Cargo cargo;
 
-	private boolean bloqueado;
+    private boolean bloqueado;
 
+    private String senha;
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public void setCargo(Cargo cargo) {
-		this.cargo = cargo;
-	}
+    public void setCargo(Cargo cargo) {
+        this.cargo = cargo;
+    }
 
-	public Cargo getCargo() {
-		return cargo;
-	}
+    public Cargo getCargo() {
+        return cargo;
+    }
 
-	public void bloquear() {
-		this.bloqueado = true;
-	}
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 
-	public void desbloquear() {
-		this.bloqueado = false;
-	}
+    public String getSenha() {
+        return senha;
+    }
 
-	public boolean isBloqueado() {
-		return bloqueado;
-	}
+    public void bloquear() {
+        this.bloqueado = true;
+    }
+
+    public void desbloquear() {
+        this.bloqueado = false;
+    }
+
+    public boolean isBloqueado() {
+        return bloqueado;
+    }
 
 }
